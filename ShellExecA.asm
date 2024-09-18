@@ -1,3 +1,13 @@
+; -------------------------------------------------------------------------------------------|
+; Dev: Prajwal Nautiyal                                                                      |
+; This was my second attempt at writing shellcode for windows.                               |
+; Unfortunately by this point I wasn't knowledgeable enough to have no null bytes            |
+; So the shellcode has some gaps, but on the bright side they do not actually cause issues!  |
+;                                                                                            |
+;                                                                                            |
+; Anyways handle it responsibly ... or don't this is literally posted publicly so up to you. |
+; -------------------------------------------------------------------------------------------|
+
 uwu:
     ; create a new stack frame
     push ebp
