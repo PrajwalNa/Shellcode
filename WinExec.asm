@@ -1,3 +1,13 @@
+; -------------------------------------------------------------------------------------------|
+; Dev: Prajwal Nautiyal                                                                      |
+; This was my first attempt at writing shellcode for windows.                                |
+; A very neat adventure into the PE File Header and its structures.                          |
+; Oh and the way PEB structure can be utilised to load in stuff is pretty cool too!          |
+;                                                                                            |
+; Handle it responsibly and I would reccomend against using it for any illegal purposes,     |
+; both for legal reasons and also since this is still rather a primitive implementation.     |
+; -------------------------------------------------------------------------------------------|
+
 uwu:
     ; create a new stack frame
     push ebp
