@@ -1,3 +1,12 @@
+; -------------------------------------------------------------------------------------------|
+; Dev: Prajwal Nautiyal                                                                      |
+; My attempt at creating an position independant shellcode.                                  |
+; For this one, I was even able to eliminate all null bytes, by using 2's complement.        |
+;                                                                                            |
+;                                                                                            |
+; Again handle it responsibly ... or don't this is literally posted publicly so up to you.   |
+; -------------------------------------------------------------------------------------------|
+
 uwu:
     ; create a new stack frame
     push ebp
