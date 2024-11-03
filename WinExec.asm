@@ -88,7 +88,7 @@ uwu:
         mov eax, [ecx + eax * 0x04]
         add eax, ebx            ; get actual address of function by adding to kernel32 base
         
-        ; call the function with args "C:\Windows\System32\cmd.exe /c "j6lLbJ5vxcyTpzFBeeU6UkQMIeqqRBM3" > flag.txt"
+        ; call the function with args "C:\Windows\System32\cmd.exe /c "flag" > flag.txt"
         ; don't worry about unescaped characters, they'll be normalised when pushing into stack anyways
         ; added garbage code to obfuscate strings
         xor edx, edx
@@ -97,14 +97,7 @@ uwu:
         push 0x7478742e
         push 0x67616c66
         push 0x203e2022
-        push 0x334d4252
-        push 0x71716549
-        push 0x4d516b55
-        push 0x36556565
-        push 0x42467a70
-        push 0x54796378
-        push 0x76354a62
-        push 0x4c6c366a
+        push 0x67616c66
         push 0x2220632f
         push 0x20657865
         push 0x2e646d63
@@ -114,7 +107,7 @@ uwu:
         push 0x6f646e69
         push 0x575c3a43
 
-        mov esi, esp        ; esi -> "C:\Windows\System32\cmd.exe /c "j6lLbJ5vxcyTpzFBeeU6UkQMIeqqRBM3" > flag.txt"
+        mov esi, esp        ; esi -> "C:\Windows\System32\cmd.exe /c "flag" > flag.txt"
         
         push 0x0A           ; Window State SW_DEFAULT (10)
         push esi            ; push pointer to command string
