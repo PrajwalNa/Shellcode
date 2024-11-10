@@ -62,7 +62,7 @@ uwu:
         ; Capture the RVA into eax (Address Table base + Ordinal Number * Bytes in Each Entry)
         mov eax, [edx + eax * 0x04]
 
-        add eax, ebx            ; get actual address of function by adding to shell32 base
+        add eax, ebx            ; get actual address of function by adding to base addr of the dll
         ret
 
 
